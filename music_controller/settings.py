@@ -126,3 +126,6 @@ WHITENOISE_USE_FINDERS = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+import django_heroku
+django_heroku.settings(locals())
